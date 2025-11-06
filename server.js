@@ -28,7 +28,7 @@ app.post("/save", async (req, res) => {
 
     await sheets.spreadsheets.values.append({
       spreadsheetId: SPREADSHEET_ID,
-      range: "Sheet1!A1:E1",
+      range: "Interviews!A1:E1",
       valueInputOption: "USER_ENTERED",
       requestBody: { values: [[Name, Phone, Aadhaar, Score, Date]] },
     });
